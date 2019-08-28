@@ -1,8 +1,8 @@
-FROM node:10.16.3-buster
+FROM node
 
 WORKDIR /app
-COPY src src
-COPY *.json .
+COPY src src/
+COPY *.json ./
 RUN npm i
 EXPOSE 80
 ENV PORT=80
